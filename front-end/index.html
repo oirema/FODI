@@ -966,8 +966,8 @@
                         event => {
                             previewHandler.copyTextContent(null, window.api.url + '?file=' + path);
                             const btn = document.querySelector('.btn.quote');
-                            btn.innerHTML = 'コピーしました。';
-                            setTimeout(() => btn.innerHTML = '引用', 250);
+                            btn.innerHTML = 'OK';
+                            setTimeout(() => btn.innerHTML = 'LINK', 250);
                         }
                     );
                     document.querySelector('.btn.share').addEventListener('click',
@@ -985,8 +985,8 @@
                                 window.location.pathname +
                                 '?path=' + sharePath());
                             const btn = document.querySelector('.btn.share');
-                            btn.innerHTML = 'コピーしました。';
-                            setTimeout(() => btn.innerHTML = '共有する', 250);
+                            btn.innerHTML = 'OK';
+                            setTimeout(() => btn.innerHTML = 'Share', 250);
                         }
                     );
                     switchRightDisplay('preview');
