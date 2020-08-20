@@ -2,13 +2,9 @@
 
 <head>
     <script>
-        /**
-        * SCF_GATEWAY：SCF 云函数网关地址
-        * SITE_NAME：站点名称
-        */
         window.GLOBAL_CONFIG = {
             SCF_GATEWAY: "https://fodi.oilabo.workers.dev/",
-            SITE_NAME: "ema",
+            SITE_NAME: "Oilabo",
             IS_CF: true
         };
         if (window.GLOBAL_CONFIG.SCF_GATEWAY.indexOf('workers') === -1) {
@@ -966,7 +962,7 @@
                         event => {
                             previewHandler.copyTextContent(null, window.api.url + '?file=' + path);
                             const btn = document.querySelector('.btn.quote');
-                            btn.innerHTML = 'OK';
+                            btn.innerHTML = 'Copied';
                             setTimeout(() => btn.innerHTML = 'LINK', 250);
                         }
                     );
@@ -985,7 +981,7 @@
                                 window.location.pathname +
                                 '?path=' + sharePath());
                             const btn = document.querySelector('.btn.share');
-                            btn.innerHTML = 'OK';
+                            btn.innerHTML = 'Copied';
                             setTimeout(() => btn.innerHTML = 'Share', 250);
                         }
                     );
